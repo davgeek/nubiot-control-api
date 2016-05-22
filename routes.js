@@ -6,7 +6,7 @@ var seneca = require('seneca')();
 var validator = require('validator');
 
 // seneca clients
-seneca.client({host: '10.128.34.171', port: 10002, pin: {role: 'actuate', cmd: 'set'}});
+seneca.client({host: '0.0.0.0', port: 10002, pin: {role: 'actuate', cmd: 'set'}});
 
 // property set route
 router.get('/devices/:device/:node/:type(on|slider|color|value)/set', (req, res) => {
